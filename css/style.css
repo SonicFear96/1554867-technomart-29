@@ -1,0 +1,16 @@
+/* Color*/
+:root {
+    --basic-dark-navy: #293449;
+    --basic-navy: #32425C;
+    --basic-coral: #EE3643;
+    --basic-light-gray: #F9F5F0;
+    --basic-gray-blue: #F1F5F7;
+    --basic-lighr-blue: #F2F6F8;
+
+}
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum";
+}
