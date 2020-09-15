@@ -5,7 +5,9 @@
     --basic-coral: #EE3643;
     --basic-light-gray: #F9F5F0;
     --basic-gray-blue: #F1F5F7;
-    --basic-lighr-blue: #F2F6F8;
+    --basic-light-blue: #F2F6F8;
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
 
 }
 body {
@@ -13,4 +15,53 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cuprum";
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.button {
+ font: inherit;
+ text-align: center;
+ color: var(--basic-white);
+ vertical-align: middle;
+ text-transform: uppercase;
+ background-color: var(--basic-coral);
+ border: none;
+}
+.header-button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-black);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: none;
+}
+
+/*header*/
+.main-header-wrapper {
+   color: var(--basic-white);
+   background-color: var(--basic-dark-navy);
+}
+.main-navigation {
+  color: var(--basic-white);
+  background-color: var(--basic-navy);
+}
+/*main*/
+.popular-product .popular-manufacturer {
+  background-color: var(--basic-light-gray);
+}
+.servise {
+  background-color: var(--basic-gray-blue);
+}
+
+/*footer*/
+.page-footer {
+  background-color: var(--basic-navy);
+}
+.main-footer-line {
+  background-color: var(--basic-dark-navy);
 }
