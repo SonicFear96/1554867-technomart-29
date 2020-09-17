@@ -113,10 +113,29 @@ a {
 }
 
 /*main*/
-
+.catalog,
+.index-group {
+  text-align: center;
+}
 .catalog-list {
   list-style: none;
   font-size: 24px;
+}
+
+.product-list,
+.manufacturer-list,
+.servise-list,
+.about-list {
+  list-style: none;
+}
+.product-list {
+  font-family: "PT Sans" sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+.product-item s, a {
+  font-size: 17px;
+line-height: 18px;
 }
 .item-1 {
   background-color: var(--spesial-yellow: #FFBF47);
@@ -126,6 +145,23 @@ a {
 }
 .servise {
   background-color: var(--basic-gray-blue);
+}
+
+
+.product-line,
+.manufacturer-line {
+  background-color: var(--basic-light-gray);
+}
+/*button*/
+.button {
+  background-color: var(--basic-coral);
+  height: 38px;
+  min-width: 192px;
+  max-width: 300px;
+  text-align: center;
+}
+.button a {
+  color: var(--basic-white);
 }
 
 /*footer*/
