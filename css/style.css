@@ -14,7 +14,8 @@
     --special-lilac: #DC91D8;
     --special-greenlight: #8ED78F;
     --special-yellowlight: #FFD180;
-    --success: #5FBB2D
+    --success: #5FBB2D;
+    --special-main-button: #CA2C37;
 }
 .page {
   min-width: 1200px;
@@ -29,9 +30,50 @@
 a {
   text-decoration: none;
 }
+/*button*/
+.button {
+  background-color: var(--basic-coral);
+  height: 38px;
+  min-width: 192px;
+  max-width: 300px;
+  text-align: center;
+}
+.button a {
+  color: var(--basic-white);
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special-main-button);
+}
+.button-arrange {
+  background-color: #63A63E;
+}
+.button-catalog {
+  background-color: var(--basic-white);
+  opacity: 0.3;
+  height: 38px;
+  width: 135px;
+}
+.catalog-list h3 {
+  color: var(--basic-white);
+  font-family: "Cuprum";
+  font-size: 24px;
+}
+.container {
+  margin: auto;
+  padding: auto;
+  width: 940px;
+}
 /*header*/
 .main-header {
   background-image: url("../img/Object.jpg");
+}
+.main-header-menu {
+  display: flex;
+}
+.main-header-indicator {
+  display: flex;
 }
 .main-header-menu {
    color: var(--basic-white);
@@ -53,6 +95,14 @@ a {
 
 .search input:focus {
   border: none;
+}
+/*header-flex*/
+.main-header-information {
+  display: flex;
+  margin-top: 46px;
+}
+.user-navigation {
+  display: flex;
 }
 
 .main-header-about {
@@ -103,6 +153,10 @@ a {
   font-family:"Cuprum" sans-serif;
   font-size: 18px
   margin-bottom: 60px;
+  margin-top: 40px;
+}
+.main-navigation ul {
+   display: flex;
 }
 .site-navigation {
   list-style: none;
@@ -117,11 +171,62 @@ a {
 .index-group {
   text-align: center;
 }
+
+.product-line,
+.manufacturer-line
+ {
+   display: flex;
+   justify-content: space-between;
+ }
+/*grid*/
 .catalog-list {
   list-style: none;
   font-size: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  repeat(3, auto);
+  grid-gap: 20px;
+  grid-template-areas:
+   "catalog-item-1 catalog-item-2 catalog-item-3"
+   "catalog-item-6 catalog-item-6 catalog-item-4"
+   "catalog-item-6 catalog-item-6 catalog-item-5";
+}
+.catalog-item-1 {
+  grid-area: catalog-item-1;
+  background: var(--spesial-yellow);
+}
+.catalog-item-2 {
+  grid-area: catalog-item-2;
+  background: var(--spesial-blue);
+}
+.catalog-item-3 {
+  grid-area: catalog-item-3;
+  background: var(--special-lilac);
+}
+.catalog-item-4 {
+  grid-area: catalog-item-4;
+  background: var(--special-greenlight);
+}
+.catalog-item-5 {
+  grid-area: catalog-item-5;
+  background: var(--special-yellowlight);
+}
+.catalog-item-6 {
+  grid-area: catalog-item-6;
+  background-image: url("../1554867-technomart-29/img/perforator_img.png");
+}
+.product-list {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.manufacturer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
+/*main*/
 .product-list,
 .manufacturer-list,
 .servise-list,
@@ -147,21 +252,13 @@ line-height: 18px;
   background-color: var(--basic-gray-blue);
 }
 
+.main-information {
+  display: flex;
 
+}
 .product-line,
 .manufacturer-line {
   background-color: var(--basic-light-gray);
-}
-/*button*/
-.button {
-  background-color: var(--basic-coral);
-  height: 38px;
-  min-width: 192px;
-  max-width: 300px;
-  text-align: center;
-}
-.button a {
-  color: var(--basic-white);
 }
 
 /*footer*/
@@ -194,4 +291,14 @@ line-height: 18px;
 }
 .footer-menu a {
    color: var(--special-yellowlight);
+}
+/*footer-flexbox*/
+.site-navigation {
+  display: flex;
+}
+.footer-product-list {
+  display: flex;
+}
+.footer-menu-wrapper {
+  display: flex;
 }
