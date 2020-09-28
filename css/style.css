@@ -30,7 +30,7 @@
 a {
   text-decoration: none;
 }
-/*button*/
+/*buttons*/
 .button {
   background-color: var(--basic-coral);
   height: 38px;
@@ -46,9 +46,7 @@ a {
 .button:active {
   background-color: var(--special-main-button);
 }
-.button-arrange {
-  background-color: #63A63E;
-}
+
 .button-catalog {
   background-color: var(--basic-white);
   opacity: 0.3;
@@ -67,13 +65,26 @@ a {
 }
 /*header*/
 .main-header {
-  background-image: url("../img/Object.jpg");
+  background: url("../img/main-header-background.png");
+}
+/*main-header*/
+.logo {
+  background-color: var(--special-main-button);
+  height: 47px;
+  width: 220px;
 }
 .main-header-menu {
-  display: flex;
+  height: 42px;
+  background-color: var(--basic-dark-navy);
 }
-.main-header-indicator {
-  display: flex;
+.main-header-menu-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+}
+.main-header-search {
+  width: 271px;
+
 }
 .main-header-menu {
    color: var(--basic-white);
@@ -82,8 +93,13 @@ a {
 .main-header-menu a {
   color: var(--basic-white);
 }
-
-.search input {
+.button-arrange {
+  background-color: #63A63E;
+  height: 42px;
+  width: 150px;
+}
+/*search*/
+input .search  {
   font: inherit;
   border: none;
   background-color: inherit;
@@ -100,11 +116,11 @@ a {
 .main-header-information {
   display: flex;
   margin-top: 46px;
+  justify-content: space-between;
 }
 .user-navigation {
   display: flex;
 }
-
 .main-header-about {
   color: var(--basic-coral);
   font-family:"Cuprum";
@@ -127,7 +143,6 @@ a {
   font-size: 14px;
   line-height: 24px;
 }
-
 .user-navigation-login,
 .user-navigation-registration {
   background-color: var(--basic-white);
@@ -154,9 +169,12 @@ a {
   font-size: 18px
   margin-bottom: 60px;
   margin-top: 40px;
+  height: 60px;
 }
 .main-navigation ul {
    display: flex;
+   justify-content: space-between;
+   padding: 16px 53px;
 }
 .site-navigation {
   list-style: none;
