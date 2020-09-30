@@ -172,31 +172,30 @@ input {
   
   height: 60px;
 }
-.site-navigation li {
+.site-navigation a {
   background-color: var(--basic-navy);
   height: 60px;
   width: 122px;
-
+  text-align: center;
+  
 }
-.main-navigation ul {
+.site-navigation a {
    display: flex;
    justify-content: space-between;
-   padding: 16px 53px;
 }
 .site-navigation {
   list-style: none;
   display: flex;
   margin-top: 60px;
 }
-.main-navigation a:hover,
-.main-navigation a:focus,
-.main-navigation a:active {
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active {
   background-color: var(--basic-dark-navy);
 }
 .site-navigation a {
   color: var(--basic-white);
 }
-
 
 /*main*/
 .catalog,
