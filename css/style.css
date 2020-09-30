@@ -97,7 +97,7 @@ a {
 }
 .main-header-menu a {
   color: var(--basic-white);
-} 
+}
 .panel_order {
   background-color: var(--spesial-header-order);
   height: 42px;
@@ -168,20 +168,20 @@ input {
 .main-navigation {
   color: var(--basic-white);
   font-family:"Cuprum" sans-serif;
-  font-size: 18px
-  
-  height: 60px;
+  font-size: 18px;
+  margin-left: 35px;
 }
 .site-navigation a {
   background-color: var(--basic-navy);
-  height: 60px;
-  width: 122px;
   text-align: center;
-  
+
 }
 .site-navigation a {
    display: flex;
    justify-content: space-between;
+}
+.site-navigation-item {
+  padding: 24px;
 }
 .site-navigation {
   list-style: none;
@@ -199,7 +199,8 @@ input {
 
 /*main*/
 .catalog,
-.index-group {
+.index-group-product,
+.index-group-manufacturer {
   text-align: center;
 }
 
@@ -213,6 +214,12 @@ input {
  .product-line,
  .manufacturer-line h2 {
    color: var(--basic-navy: #32425C);
+ }
+ .index-group-product {
+   margin-top: 59px;
+ }
+ .index-group-manufacturer {
+   margin-top: 70px;
  }
 /*main grid*/
 .catalog-list {
@@ -249,18 +256,21 @@ input {
 }
 .catalog-item-6 {
   grid-area: catalog-item-6;
-  background-image: url("../1554867-technomart-29/img/perforator_img.png");
+  background-image: url("../img/perforator_img.png");
+  color: var(--basic-white);
 }
 .product-list {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: flex-end;
+    padding-top: 20px;
 }
 .manufacturer-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    padding-top: 20px;
 }
 
 /*main*/
@@ -289,11 +299,12 @@ line-height: 18px;
 
 .servise {
   background-color: var(--basic-gray-blue);
+  margin-top: 70px;
 }
 
 .main-information {
   display: flex;
-
+  margin-top: 70px;
 }
 
 
@@ -367,7 +378,7 @@ line-height: 18px;
 }
 .header_logo_footer {
  width: 220px;
- height: 68px;
+ height: 65px;
  background-color: var(--basic-coral);
 }
 .footer-navigation {
