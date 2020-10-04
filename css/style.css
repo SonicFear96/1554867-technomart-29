@@ -18,12 +18,13 @@
     --special-main-button: #CA2C37;
     --spesial-header-order: #63A63E;
     --special-main-menu: #293449;
+    --special-border: #EAEAEA;
 }
 .page {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-white);
@@ -32,38 +33,13 @@
 a {
   text-decoration: none;
 }
-/*buttons*/
-.button {
-  background-color: var(--basic-coral);
-  height: 38px;
-  min-width: 192px;
-  max-width: 300px;
-  text-align: center;
-}
-.button a {
-  color: var(--basic-white);
-}
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--special-main-button);
-}
-
-.button-catalog {
-  background-color: var(--basic-white);
-  opacity: 0.3;
-  height: 38px;
-  width: 135px;
-}
-.catalog-list h3 {
-  color: var(--basic-white);
-  font-family: "Cuprum";
-  font-size: 24px;
-}
 .container {
   margin: auto;
   padding: auto;
   width: 940px;
+
+/*buttons*/
+
 }
 /*header*/
 .main-header {
@@ -81,7 +57,11 @@ a {
   width: 220px;
   height: 42px;
   background-color: var(--basic-coral);
+  box-shadow: 0 5px 0px 0  var(--special-main-button);
  }
+.header_lovo  {
+  padding-left: 40px;
+}
  .header_search {
   width: 271px;
  }
@@ -89,6 +69,8 @@ a {
   display: flex;
   width: 450px;
   justify-content: space-between;
+  font-size: 18px;
+
 }
 
 .main-header-menu {
@@ -102,6 +84,7 @@ a {
   background-color: var(--spesial-header-order);
   height: 42px;
   width: 150px;
+
 }
 
 /*search*/
@@ -109,12 +92,20 @@ a {
   height: 42px;
   width: 300px;
 }
-input {
+.header_search input {
   border: none;
   outline: none;
   width: 100%;
   height: 42px;
-  background-color: var(--basic-dark-navy);
+  background-color:  var(--basic-dark-navy);
+  color: white;
+  font-family:"Cuprum", sans-serif;
+  font-size: 18px;
+}
+
+.header_search input:hover {
+  background-color: white;
+  color: black;
 }
 /*header-flex*/
 .main-header-information {
@@ -132,6 +123,7 @@ input {
   line-height: 23px;
 }
 .main-header-telephone {
+  display: block;
   font-family: "Cuprum";
   border: 3px solid #FFFFFF;
   font-size: 21px;
@@ -141,13 +133,38 @@ input {
   height: 45px;
   width: 270px;
 }
+
 .main-header-adress {
   font-family:"Cuprum";
   color: var(--basic-navy);
   font-size: 14px;
   line-height: 24px;
 }
-.user-navigation-login,
+
+.login-link {
+  display: block;
+  background-color: var(--basic-white);
+  min-width: 120px;
+
+  text-align: center;
+  color: var(--basic-black);
+  font-family:"Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  margin-right: 10px;
+}
+.registration-link {
+  display: block;
+  background-color: var(--basic-white);
+  min-width: 150px;
+
+  text-align: center;
+  color: var(--basic-black);
+  font-family:"Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+}
+/*.user-navigation-login,
 .user-navigation-registration {
   background-color: var(--basic-white);
   margin: 10px;
@@ -162,24 +179,19 @@ input {
   font-family:"Cuprum" sans-serif;
   font-size: 21px;
   line-height: 21px;
-
+*/
 }
 /*navigation*/
 .main-navigation {
   color: var(--basic-white);
   font-family:"Cuprum" sans-serif;
   font-size: 18px;
-  margin-left: 35px;
 }
 .site-navigation a {
+  display: block;
   background-color: var(--basic-navy);
-  text-align: center;
+}
 
-}
-.site-navigation a {
-   display: flex;
-   justify-content: space-between;
-}
 .site-navigation-item {
   padding: 24px;
 }
@@ -213,7 +225,7 @@ input {
 
  .product-line,
  .manufacturer-line h2 {
-   color: var(--basic-navy: #32425C);
+   color: var(--basic-navy);
  }
  .index-group-product {
    margin-top: 59px;
@@ -260,17 +272,27 @@ input {
   color: var(--basic-white);
 }
 .product-list {
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-end;
     padding-top: 20px;
 }
+.product-list li {
+  margin-right: 20px;
+}
+.product-list li:nth-child(4) {
+  margin-right: 0px;
+}
+
 .manufacturer-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding-top: 20px;
+}
+.manufacturer-item {
+  border: 1px solid var(--special-border);
+  width: 220px;
 }
 
 /*main*/
@@ -287,6 +309,7 @@ input {
 }
 .product-item {
   width: 220px;
+
 }
 .product-item s, a {
   font-size: 17px;
@@ -378,8 +401,9 @@ line-height: 18px;
 }
 .header_logo_footer {
  width: 220px;
- height: 65px;
+ height: 63px;
  background-color: var(--basic-coral);
+ box-shadow: 0 5px 0px 0  var(--special-main-button);
 }
 .footer-navigation {
   display: flex;
