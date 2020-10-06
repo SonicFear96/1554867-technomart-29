@@ -19,6 +19,8 @@
     --spesial-header-order: #63A63E;
     --special-main-menu: #293449;
     --special-border: #EAEAEA;
+    --special-focus-button-order: #5FBB2D;
+    --special-activ-button-order: #518534;
 }
 .page {
   min-width: 1200px;
@@ -70,7 +72,7 @@ a {
   width: 450px;
   justify-content: space-between;
   font-size: 18px;
-
+  align-items: flex-start;
 }
 
 .main-header-menu {
@@ -80,17 +82,31 @@ a {
 .main-header-menu a {
   color: var(--basic-white);
 }
+.panel_bookmarks,
+.panel_basket {
+  padding: 9px 16px;
+  font-family: "Cuprum", sans-serif;
+  margin-left: 10px;
+}
 .panel_order {
   background-color: var(--spesial-header-order);
-  height: 42px;
-  width: 150px;
+  padding: 9px 16px;
+  font-family: "Cuprum", sans-serif;
+}
 
+.panel_order:hover,
+.panel_order:focus {
+  background-color: var(--special-focus-button-order);
+}
+.footer-product-list a:active {
+  background-color: var(--special-activ-button-order);
 }
 
 /*search*/
 .header_search {
   height: 42px;
   width: 300px;
+  
 }
 .header_search input {
   border: none;
@@ -101,6 +117,7 @@ a {
   color: white;
   font-family:"Cuprum", sans-serif;
   font-size: 18px;
+  padding-left: 40px;
 }
 
 .header_search input:hover {
@@ -115,12 +132,17 @@ a {
 }
 .user-navigation {
   display: flex;
+  align-items: flex-start;
 }
 .main-header-about {
   color: var(--basic-coral);
   font-family:"Cuprum";
   font-size: 16px;
   line-height: 23px;
+  margin-left: 30px
+}
+.main-header-contact {
+  margin-left: 30px;
 }
 .main-header-telephone {
   display: block;
@@ -130,8 +152,7 @@ a {
   line-height: 30px;
   text-align: center;
   color: var(--basic-coral);
-  height: 45px;
-  width: 270px;
+  padding: 5px 60px;
 }
 
 .main-header-adress {
@@ -139,13 +160,13 @@ a {
   color: var(--basic-navy);
   font-size: 14px;
   line-height: 24px;
+  margin-left: 10px;
 }
 
 .login-link {
   display: block;
   background-color: var(--basic-white);
-  min-width: 120px;
-
+  padding: 12px 24px; 
   text-align: center;
   color: var(--basic-black);
   font-family:"Cuprum", sans-serif;
@@ -156,8 +177,7 @@ a {
 .registration-link {
   display: block;
   background-color: var(--basic-white);
-  min-width: 150px;
-
+  padding: 12px 24px;
   text-align: center;
   color: var(--basic-black);
   font-family:"Cuprum", sans-serif;
@@ -245,6 +265,8 @@ a {
    "catalog-item-1 catalog-item-2 catalog-item-3"
    "catalog-item-6 catalog-item-6 catalog-item-4"
    "catalog-item-6 catalog-item-6 catalog-item-5";
+    margin-left: 0; 
+    padding-left: 0;
 }
 .catalog-item-1 {
   grid-area: catalog-item-1;
@@ -276,6 +298,8 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 20px;
+    margin-left: 0; 
+    padding-left: 0;
 }
 .product-list li {
   margin-right: 20px;
@@ -289,6 +313,8 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding-top: 20px;
+    margin-left: 0; 
+    padding-left: 0;
 }
 .manufacturer-item {
   border: 1px solid var(--special-border);
