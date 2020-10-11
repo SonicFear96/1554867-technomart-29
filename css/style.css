@@ -253,6 +253,10 @@ a {
  text-align: center;
  text-transform: uppercase;
 }
+.button-more {
+  position: absolute;
+  bottom: 20px;
+}
 .button-link:hover,
 .button-link:focus,
 .button-link:active {
@@ -338,15 +342,19 @@ a {
   text-transform:  uppercase;
   font-weight: 700;
   line-height: 36px;
+  margin: 0;
 
 }
 .catalog-item-slider p {
   font-family: "Cuprum", sans-serif;
   font-style: normal;
   font-weight: normal;
+  margin: 0;
 }
 .catalog-item-slider-wrapper {
   padding: 20px;
+  position: relative;
+  height: 85%;
 }
 /*Продукты*/
 .product-list {
