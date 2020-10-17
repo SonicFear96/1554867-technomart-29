@@ -13,22 +13,22 @@
      	 <div class="main-header-menu">
        		 <div class="container">
           		<section class="main-header-menu-nav">
-            			<div class="header_logo">
+            			<a class="header_logo" href="#">
                   			<img src="img/logo-technomart.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
-              			</div>
+              			</a>
               		<div class="header_search">
                 		<input type='search' value='Поиск:' placeholder="Поиск"/>
               		</div>
               		<div class="header_panel panel">
-                		<div class="panel_bookmarks">
+                		<a class="panel_bookmarks"href="#">
                   			Закладки: <span>0</span>
-                		</div>
-                		<div class="panel_basket">
+                		</a>
+                		<a class="panel_basket" href="#">
                   			Корзина: <span>0</span>
-                		</div>
-                		<div class="panel_order">
-                  			<a class="button_panel_order"  href="#" target="_blank">Оформить заказ</a>
-                		</div>
+                		</a>
+                		<a class="panel_order" href="#" >
+                  			Оформить заказ
+                		</a>
               		</div>
             	</section>
           	</div>
@@ -68,44 +68,51 @@
           </div>
         </div>
     </header>
-    <main class="container">
-      <h1>Интернет-магазин «Техномарт»</h1>
+    <main>
+      <div class="container">
+      <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
         <section class="catalog">
-          <h2>Каталог</h2>
+          <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
             	<li class="catalog-item catalog-item-1">
-                	<h3>Материалы</h3>
-                		<a class="button-catalog-link" href="#">
-                    		На любой вкус
-                		</a>
-                		<img src="img/icon-1.svg" width="" height="" alt="">
+                	<div><h3>Материалы</h3>
+                			<a class="button-catalog-link" href="#">
+                    			На любой вкус
+                			</a>
+                </div>
+                			<img src="img/icon-1.svg" width="" height="" alt="">
+
             	</li>
             	<li class="catalog-item catalog-item-2">
-                		<h3>Инструмент</h3>
+                		<div><h3>Инструмент</h3>
                 			<a class="button-catalog-link" href="#">
                 				На все случаи
                 			</a>
+                		</div>
                 		<img src="img/icon-2.svg" width="" height="" alt="">
             	</li>
             	<li class="catalog-item catalog-item-3">
-                		<h3>Техника</h3>
+                		<div><h3>Техника</h3>
                 			<a class="button-catalog-link" href="#">
                     			Для стройки
                 			</a>
+                		</div>
                 		<img src="img/icon-3.svg" width="" height="" alt="">
             	</li>
             	<li class="catalog-item catalog-item-4">
-                		<h3>Скидка 50%</h3>
+                		<div><h3>Скидка 50%</h3>
                 			<a class="button-catalog-link" href="#">
                     			На 350 товаров
                				</a>
+               			</div>
                			<img src="img/icon-4.svg" width="" height="" alt="">
            	 	</li>
             	<li class="catalog-item catalog-item-5">
-                		<h3>Доставка</h3>
+                		<div><h3>Доставка</h3>
                 			<a class="button-catalog-link" href="#">
                 				Бесплатно
                 			</a>
+                		</div>
                 		<img src="img/icon-5.svg" width="" height="" alt="">
             	</li>
             	<li class="catalog-item-slider">
@@ -136,27 +143,36 @@
           		</div>
           		<ul class="product-list">
             		<li class="product-item">
-              		<img src="../1554867-technomart-29/img/product/product-1.png" alt="product_1">
+              		<img src="../1554867-technomart-29/img/product/product-1.png" alt="product_1" width="220" height="144">
+                		<a href="#">
                 		<h3>Перфоратор BOSCH BFG 9000</h3>
-               		 	<s>32550 Р.</s>
-              		    <a>25500 Р.</a href="#">
+                		</a>
+               		 		<s>32550 Р.</s>
+              		    	<span>25500 Р.</span>
+ 	
             		</li>
             		<li class="product-item">
-            		  <img src="../1554867-technomart-29/img/product/product-2.png" alt="product_2">
+            		  <img src="../1554867-technomart-29/img/product/product-2.png" alt="product_2" width="220" height="144">
+            		    <a href="#">
             		    <h3>Перфоратор BOSCH BFG 3000</h3>
-            		      <s>22500 Р.</s>
-            		        <a href="#">15500 Р.</a>
+            			</a>
+            		    	<s>22500 Р.</s>
+            		    	<span>15500 Р.</span>	
             		</li>
             		<li class="product-item">
-            		  <img src="../1554867-technomart-29/img/product/product-3.png" alt="product_3">
+            		  <img src="../1554867-technomart-29/img/product/product-3.png" alt="product_3" width="220" height="144">
+            		  	<a href="#">
             		  	<h3>Перфоратор BOSCH BFG 6000</h3>
+            		  	</a>
             		    	<s>30500 Р.</s>
-            		      	<a href="#">25500 Р.</a>
+            		    	<span>25500 Р.</span>	
             		</li>
             		<li class="product-item">
-            		  <img src="../1554867-technomart-29/img/product/product-4.png" alt="product_4">
+            		  <img src="../1554867-technomart-29/img/product/product-4.png" alt="product_4" width="220" height="144">
+            		  	<a href="#">
             		  	<h3>Перфоратор BOSCH BFG 2000</h3>
-            		    	<a href="#">12500 Р.</a>
+            		  	</a>
+            		    	<span class="not_sale">12500 Р.</span>	
             		</li>
       		    </ul>
      		 </section>
@@ -213,26 +229,30 @@
           		</ul>
         	</section>
       	</div>
+       </div> 
         <section class="servise">
-        	<div class="servise-main">
+          <div class="container">
+        	   <div class="servise-main">
             	<h2>Сервисы</h2>
             		<p>Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        	</div>
-            <div class="servise-about">
-            	<ul class="servise-list">
-                	<li class="servise-item">Доставка</li>
-                	<li class="servise-item">Гарантия</li>
-                	<li class="servise-item">Кредит</li>
-              	</ul>
-            </div>
-          	<div class="sersive-item-about">
-            	<h3>Доставка</h3>
-            	<p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            	<!---тут будут другие пункты виджета-->
-          	</div>
+        	   </div>
+                <div class="servise-about">
+            	     <ul class="servise-list">
+                	   <li class="servise-item">Доставка</li>
+                	   <li class="servise-item">Гарантия</li>
+                	   <li class="servise-item">Кредит</li>
+              	   </ul>
+               </div>
+          	   <div class="sersive-item-about">
+            	   <h3>Доставка</h3>
+            	   <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            	   <!---тут будут другие пункты виджета-->
+          	   </div>
+          </div>  
         </section>
-      	<div class="main-information">
-        	<section class="about">
+      <div class="container">
+      	<section class="main-information">
+        	<div class="about">
           		<h2>Компания «Техномарт»</h2>
           		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br> ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           		</p>
@@ -243,26 +263,27 @@
             		<li class="about-item">Автотрейдинг</li>
             		<li class="about-item">ЖелДорЭкспедиция</li>
           		</ul>
-            		<a class="button-link" href="#">Подробно о компании</a>
-       		 </section>
-        	<section class="contact">
+            		<a class="button-link about-button" href="#">Подробнее о компании</a>
+       		 </div>
+        	<div class="contact">
           		<h2>Контакты</h2>
           		<p>Вы можете забрать товар сами,<br>выехав в наш офис
           		</p>
           		<a href="https://2gis.ru/spb">
             		<img src="../1554867-technomart-29/img/map.png" alt="map">
           		</a>
-            		<a class="button-link" href="#">Заблудились? Напишите нам!
+            		<a class="button-link contact-button" href="#">Заблудились? Напишите нам!
             		</a>
-        	</section>
-      	</div>
+        	</div>
+      	</section>
+     </div>   
     </main>
     <footer class="page-footer main-footer">
     	<div class="container">
       		<section class="footer-navigation">
-       			<div class="header_logo_footer">
+       			<a class="header_logo_footer" href="#">
             		<img src="img/logo-technomart.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
-        		</div>
+        		</a>
             	<div class="footer-nav-menu">
               	<ul class="site-navigation-footer">
                	 <li class="site-nav-item"><a href="#">Компания</a></li>
@@ -296,25 +317,19 @@
                 	</div>
               		<section class="footer-social">
                 		<ul class="footer-social-list">
-                  			<li class="social-button">
-                  				<a  href="#">
-                  					<svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  						<path d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z" fill="white"/>
-                  					</svg>
+                  			<li>
+                  				<a class="social-button"  href="#">
+                  					<img src="img/icon-vk.svg" width="20" height="20" alt="">
                   				</a>
                   			</li>
-                  			<li class="social-button">
-                  				<a href="#">
-                  					<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  						<path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                  					</svg>
+                  			<li>
+                  				<a class="social-button" href="#">
+                  					<img src="img/icon-fb.svg" width="20" height="20" alt="">
                   				</a>
                   			</li>
-                  			<li class="social-button">
-                  				<a href="#">
-                  					<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  						<path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
-                  					</svg>
+                  			<li>
+                  				<a class="social-button" href="#">
+                  					<img src="img/icon-insta.svg" width="20" height="20" alt="">
                   				</a>
                   			</li>
                 		</ul>
