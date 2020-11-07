@@ -313,6 +313,15 @@ a {
 .main-header-contact {
   margin-left: 24px;
 }
+.catalog-page.main-header-contact {
+  margin-left: 31px;
+}
+.catalog-page.main-header-telephone {
+  padding: 5px 39px 5px 75px;
+}
+.catalog-page.main-header-adress {
+  margin-left: 14px;
+}
 .main-header-telephone {
   position: relative;
   display: block;
