@@ -1478,7 +1478,27 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.min-price,
+.max-price {
+  font-family: "PT Sans",sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+.max-price {
+  position: relative;
+}
+.max-price::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 19px;
+  width: 6px;
+  height: 1px;
+  background-color: var(--basic-black);
+}
 
+}
 .price-controls label {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
