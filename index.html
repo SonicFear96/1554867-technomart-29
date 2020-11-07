@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
   </head>
@@ -119,19 +119,19 @@
                   </div>
               </li>
             	<li class="catalog-item-product">
-              		<div class="catalog-slider slide-perforator slide-active">
+              		<div class="catalog-slider slide-perforator active">
               			<h3>Перфораторы</h3>
               				<p>Настоящие мужские игрушки</p>
               					<a class="button-link button-more" href="catalog.html">Открыть каталог</a>
               		</div>		
             	</li>
               <div class="slider-controls">
-                <button type="button"></button>
-                <button class="current" type="button"></button>
+                <button class="left-control" type="button"></button>
+                <button class="right-control current" type="button"></button>
               </div>
               <div class="slider_navigation">
                 <button class="left_arrow" type="button"><img src="img/icon-left.svg" width="22" height="40" alt="слайдер влево"></button>
-                <button class="right_arrow" type="button"><img src="img/icon-right.svg" width="22" height="40" alt="слайдер вправа"></button>
+                <button class="right_arrow disactive" type="button"><img src="img/icon-right.svg" width="22" height="40" alt="слайдер вправа"></button>
               </div>
             </ul>
             
@@ -222,7 +222,7 @@
                         </h3>
                       </a>  
             		         <div class="product_price not_sale">12500 Р.</div>	 
-                </li>   
+                </li>     
       		    </ul>
      		 </section>
       	</div>
@@ -325,7 +325,7 @@
         	<div class="about">
           		<h2>Компания «Техномарт»</h2>
           		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для </p>
-              <p>ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+              <p>ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах.</p>
           		<div class="about-paragraph">
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
                 <p>Техномарт работает со многими транспортными компаниями:</p>
@@ -431,7 +431,7 @@
         </p>
         <p class="write-us-text">
           <label  for="text">Текст письма:</label>
-          <textarea class="text-user" name="comment" id="comment-field" rows="5" placeholder="В свободной   форме">    
+          <textarea class="text-user" name="comment" id="comment-field" placeholder="В свободной   форме">    
           </textarea>
         </p>
         </div>
@@ -457,9 +457,6 @@
           </div>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>       
-    <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript" src="js/write-us.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/basket.js"></script>   
+    <script type="text/javascript" src="js/script.js"></script> 
   </body>
 </html>
