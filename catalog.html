@@ -17,10 +17,10 @@
                         <img src="img/logo-technomart.svg" width="110" height="20" alt="Логотип интернет-магазина «Техномарт»">
                     </a>
                   <div class="header_search">
-                    <input class="search" type='search'placeholder="Поиск:"/>
+                    <input class="search" type='search' placeholder="Поиск:"/>
                   </div>
                   <div class="header_panel panel">
-                    <a class="panel_bookmarks"href="#">
+                    <a class="panel_bookmarks" href="#">
                         Закладки: <span>0</span>
                     </a>
                     <a class="panel_basket basket_filled" href="#">
@@ -89,7 +89,7 @@
           </li>
           <li class="breadcrumbs-item">
            <a href="catalog.html">Инструмент</a>
-          </li class="breadcrumbs-item">
+          </li>
           <li class="breadcrumbs-item">
             <a href="catalog.html">Перфораторы</a>
           </li>
@@ -98,33 +98,31 @@
           <h1 class="catalog-main-theme">Перфораторы</h1>
         </section>
       </div>
-<!-----------------------------------------------ТУТ БУДЕТ ФИЛЬТР И СПИСОК КАТАЛОГА------------------->
       <div class="container">
         <div class="catalog-main-wrapper">
          <section class="filters">
             <h2>Фильтр:</h2>
               <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-item">
-        <legend>Цена:</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="toggle toggle-min" tabindex="0"></div>
-            <div class="toggle toggle-max" tabindex="0"></div>
-          </div>
-          <div class="price-controls">
-            <label class="min-price">
-              <input type="number" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-              <input type="number" name="max-price" value="30000">
-            </label>
-          </div>
-        </div>
-    </fieldset>
-
+                  <legend>Цена:</legend>
+                    <div class="range-filter">
+                      <div class="range-controls">
+                        <div class="scale">
+                         <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0"></div>
+                        <div class="toggle toggle-max" tabindex="0"></div>
+                      </div>
+                      <div class="price-controls">
+                        <label class="min-price">
+                          <input type="number" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">
+                          <input type="number" name="max-price" value="30000">
+                        </label>
+                      </div>
+                    </div>
+                </fieldset>
                 <fieldset>
                   <legend>Производители:</legend>
                     <ul>
@@ -165,7 +163,7 @@
                 </fieldset>
                 <button type="submit" class="filter-button button">Показать</button>
               </form>
-          </section>
+         </section>
           <section class="catalog-page-catalog-product">
             <h2 class="visually-hidden">Каталог</h2>
             <div class="sorting"> 
@@ -376,9 +374,6 @@
           </p>
         </div>
       </section>
-
-
-
     </main>
    <footer class="page-footer main-footer">
       <div class="container">
@@ -446,9 +441,9 @@
               </div>
             </div>
         </section>
-    </footer>
+   </footer>
   <section class="modal modal-basket">
-  <h2 class="visually-hidden">Сообщение о корзине</h2>
+    <h2 class="visually-hidden">Сообщение о корзине</h2>
     <div class="modal-basket-main">  
       <p>Товар добавлен в корзину!</p>
     </div>  
@@ -457,7 +452,7 @@
       <button class="button-close">продолжить покупки</button>
     </div>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    </section>   
-    <script type="text/javascript" src="js/basket.js"></script>   
+  </section>   
+    <script type="text/javascript" src="js/basket.min.js"></script>   
   </body>
 </html>

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
- <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
     <body class="page-body">
     	<header class="main-header">
@@ -20,7 +20,7 @@
                 		<input class="search" type='search' placeholder="Поиск:">
               		</div>
               		<div class="header_panel panel">
-                		<a class="panel_bookmarks"href="#">
+                		<a class="panel_bookmarks" href="#">
                   			Закладки: <span>0</span>
                 		</a>
                 		<a class="panel_basket" href="#">
@@ -41,18 +41,18 @@
                    и инструментов для ремонта</i>
           		</div>
           		<div class="main-header-contact">
-          		<a class="main-header-telephone" href="tel:+78125550555">
-            		+7 (812) 555-05-55
-          		</a>
-				<div class="main-header-adress">
-            		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          		</div>
+          		  <a class="main-header-telephone" href="tel:+78125550555">
+            		  +7 (812) 555-05-55
+          		  </a>
+				        <div class="main-header-adress">
+            		  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
           		</div>
             	<div class="user-navigation">
               		<a class="button login-link" href="login.html">Войти</a>
               		<a class="button registration-link" href="registration.html">Регистрация</a>
             	</div>
-            </section>
+          </section>
         </div>
         <div class="main-navigation-wrapper">
           <div class="container">
@@ -71,8 +71,8 @@
         </div>
       </header>
       <main>
-      <div class="container">
-      <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
+        <div class="container">
+        <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
             <ul class="catalog-list">
@@ -125,6 +125,7 @@
               					<a class="button-link button-more" href="catalog.html">Открыть каталог</a>
               		</div>		
             	</li>
+                          </ul> 
               <div class="slider-controls">
                 <button class="left-control" type="button"></button>
                 <button class="right-control current" type="button"></button>
@@ -133,20 +134,14 @@
                 <button class="left_arrow" type="button"><img src="img/icon-left.svg" width="22" height="40" alt="слайдер влево"></button>
                 <button class="right_arrow disactive" type="button"><img src="img/icon-right.svg" width="22" height="40" alt="слайдер вправа"></button>
               </div>
-            </ul>
-            
+    
         </section>
       	<div class="index-group-product">
         	<section class="popular-product">
           		<div class="product-line">
             		<h2>Популярные товары:</h2>
             				<a class="button-link" href="#">Все популярные товары</a>
-          		</div>
-              <!--    ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАВЕДЕНИИ                
-                      <div class="product-button-wrapper">
-                      <button class="product-button button-buy">купить</button>
-                      <button class="product-button button-pack">закладки</button>
-                    </div>  --->              
+          		</div>           
           		<ul class="product-list">
             		<li class="product-item">
                 <div class="product-image-wrapper">  
@@ -314,13 +309,13 @@
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!</p>
                   <p>Кредитные консультанты придут вам на помощь!</p>
-                  <a class="button-link button-credit">Отправить заявку</a>
+                  <a class="button-link button-credit" href="#">Отправить заявку</a>
                  </li> 
           	   </ul>
               </div> 
           </div>  
         </section>
-      <div class="container">
+        <div class="container">
       	<section class="main-information">
         	<div class="about">
           		<h2>Компания «Техномарт»</h2>
@@ -418,19 +413,19 @@
       	</section>
       </footer>
       <section class="modal modal-write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
+        <h2 class="visually-hidden">Напишите нам</h2>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us-main">   
         <p class="write-us-name">
-          <label for="name">Ваше имя:</label>
+          <label>Ваше имя:</label>
           <input class="name-user" id="name-user" type="text"  name="name" placeholder="Имя Фамилия">
         </p>  
         <p class="write-us-mail">
-          <label for="mail">Ваш e-mail:</label>
+          <label>Ваш e-mail:</label>
           <input class="mail-user" id="mail-user" type="email" name="mail" placeholder="email@example.com">
         </p>
         <p class="write-us-text">
-          <label  for="text">Текст письма:</label>
+          <label>Текст письма:</label>
           <textarea class="text-user" name="comment" id="comment-field" placeholder="В свободной   форме">    
           </textarea>
         </p>
@@ -443,7 +438,7 @@
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Карта</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461614353!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603995074795!5m2!1sru!2sru" width="939" height="445" alt="Магазин Техномарт по адресу Большая Конюшенная, д.19"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461614353!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603995074795!5m2!1sru!2sru" width="939" height="445"></iframe>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>
       <section class="modal modal-basket">
@@ -457,6 +452,6 @@
           </div>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>       
-    <script type="text/javascript" src="js/script.js"></script> 
+    <script type="text/javascript" src="js/script.min.js"></script> 
   </body>
 </html>

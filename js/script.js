@@ -117,7 +117,25 @@ LeftButtonSlider.addEventListener("click", function (evt) {
   LeftControl.classList.add("current");
   RightControl.classList.remove("current");
 });
+LeftControl.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  SlideDrills.classList.add("active");
+  SlidePerforator.classList.remove("active");
+  LeftButtonSlider.classList.add("disactive");
+  RightButtonSlider.classList.remove("disactive");
+  LeftControl.classList.add("current");
+  RightControl.classList.remove("current");
+});
 RightButtonSlider.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  SlidePerforator.classList.add("active");
+  SlideDrills.classList.remove("active");
+  RightButtonSlider.classList.add("disactive");
+  LeftButtonSlider.classList.remove("disactive");
+  RightControl.classList.add("current");
+  LeftControl.classList.remove("current");
+});
+RightControl.addEventListener("click", function (evt) {
   evt.preventDefault();
   SlidePerforator.classList.add("active");
   SlideDrills.classList.remove("active");
